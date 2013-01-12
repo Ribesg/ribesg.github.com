@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" ><!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Ribesg.fr - NCore</title>
+        <link rel="stylesheet" href="../../non-html/css/foundation.css" />
+        <link rel="stylesheet" href="../../non-html/css/icons.css">
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="../../non-html/css/icons_ie7.css">
+        <![endif]-->
+        </style>
+        <link rel="stylesheet" href="../../non-html/css/ribesg.css" />
+        <link rel="stylesheet" href="../../non-html/css/animate.css" />
+        <link rel="icon" type="image/png" href="../../non-html/img/favicon.png" />
+        <!--[if IE]>
+        <link rel="shortcut icon" type="image/x-icon" href="../../non-html/img/favicon.ico" />
+        <![endif]-->
+        <script src="../non-html/js/vendor/custom.modernizr.js"></script>
+    </head>
+    <body>
+
+    <nav class="top-bar">
+        <ul class="title-area">
+            <!-- Title Area -->
+            <li class="name">
+                <h1>
+                    <a href="/fr/">Rib.log</a>
+                </h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon">
+                <a href="#">
+                    <span>Menu</span>
+                </a>
+            </li>
+        </ul>
+
+        <section class="top-bar-section">
+            <!-- Left Nav Section -->
+            <ul class="left">
+                <li class="divider"></li>
+                <li class="hide-for-small"> <a href="/fr/">Page Principale</a> </li>
+                <li class="divider hide-for-small"></li>
+            </ul>
+
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li class="hide-for-small"> <a>Site toujours en construction</a> </li>
+                <li class="divider hide-for-small"></li>
+                <li class="hide-for-small">
+                    <a href="../../bukkit/NCore">
+                        <img src="../../non-html/img/flags/gb.png" />
+                    </a>
+                </li>
+                <li class="divider hide-for-small"></li>
+                <li class="active"><a href="#">A propos</a></li>
+            </ul>
+        </section>
+    </nav>
+    
+    <div id="title" class="row hidden-effect">
+        <!-- Title -->
+        <div class="large-9 columns">
+            <h2 class="inline-icon-container"> <i class="hide-for-small foundicon-smiley"></i> NCore - Le truc inutile nécessaire</h2>
+            <h4 class="subheader"> Vous n'avez aucune idée de ce qu'il fait, mais il est très important pour moi ! </h4>
+        </div>
+        <div class="large-3 columns">
+            <ul class="large-block-grid-4">
+                <li>
+                    <a class="block-link pos" href="http://dev.bukkit.org/bukkit-plugins/ncore/">
+                        <img alt="Voir la page BukkitDev" src="../../non-html/img/bukkit.png" />
+                    </a>
+                </li>
+                <li>
+                    <a class="block-link neg" href="https://github.com/Ribesg/NPlugins/tree/master/NCore">
+                        <img alt="Voir le code source sur Github" src="../../non-html/img/github.png" />
+                    </a>
+                </li>
+            </ul>
+            <ul class="large-block-grid-4">
+                <li>
+                    <a class="block-link neg" href="http://mcstats.org/plugin/NCore">
+                        <img alt="Voir des statistiques sur ce plugin sur MCStats" src="../../non-html/img/mcstats.png" />
+                    </a>
+                </li>
+                <li>
+                    <a class="block-link pos" href="https://www.paypal.com/cgi-bin/webscr?hosted_button_id=RVS3BJHFPC78A&item_name=NCore+%28from+Bukkit.org%29&cmd=_s-xclick">
+                        <img alt="Pensez aux dons !" src="../../non-html/img/donate.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <p class="large-12 columns content hidden-effect">
+            NCore se trouve à la racine de tous mes plugins, que j'appelle <em>nodes</em> ("noeuds", ou modules).
+            Voici les raisons pour lesquelles ce plugin existe :
+        </p>
+    </div>
+    <div class="row">
+        <ul class ="small-11 small-offset-1 columns content hidden-effect">
+            <li>
+                Centralisation de toutes les fonction communes aux différents modules
+                <ul>
+                    <li> Gestion de la configuration </li>
+                    <li> Connexion à Metrics (MCStats) </li>
+                    <li> Démarrage / Arrêt des plugins : vérification de dépendances et autre trucs communs </li>
+                    <li> Méthodes utilitaires communes </li>
+                    <li> Traduction </li>
+                </ul>
+            </li>
+            <li> Une API permettant à chaque noeud d'utiliser les autres noeud. Empêche les dépendances cycliques. </li>
+            <li> [FUTUR/IDEE] Valeurs de Configuratione et de Traduction communes à tous les plugins. </li>
+        </ul>
+    </div>
+    <div class="row">
+        <p class="large-12 columns content hidden-effect">
+            Vous <strong>devez</strong> mettre la version appropriée du fichier <kbd>NCore.jar</kbd> dans le dossier
+            <kbd>/plugins</kbd> si vous voulez utiliser n'importe quel noeud.
+        </p>
+    </div>
+    <div class="row">
+        <div class="large-12 columns hidden-effect" id="Status">
+            <h2 class="inline-icon-container"> <i class="hide-for-small foundicon-settings"></i> <span>Status: chargement...<span></h2>
+            <div class="progress success" style="height: 3em;">
+                <span class="meter" style="width: 0;"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="features" class="large-6 columns hidden-effect">
+            <h3> Fonctions : </h3>
+            <ul class="small-11 small-offset-1 columns">
+                <li> Gestion de Configuration centralisée </li>
+                <li> Gestion de Traduction centralisée </li>
+                <li> Gestion de démarrage/arrêt de plugins centralisée (+ dépendances)</li>
+                <li> Gestion de Metrics (MCStats) centralisée </li>
+                <li> Quelques utilitaires </li>
+            </ul>
+        </div>
+        <div id="todo" class="large-6 columns hidden-effect">
+            <h3> A faire : </h3>
+            <ul class="small-11 small-offset-1 columns">
+                <li> Rien </li>
+                <li> <em> Suivre les mises à jour des noeuds </em> </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.write(
+            '<script src=' +
+            ('__proto__' in {} 
+                ? '../../non-html/js/vendor/zepto' 
+                : '../../non-html/js/vendor/jquery') +
+            '.js><\/script>');
+    </script>
+
+    <script src="../../non-html/js/foundation.min.js"></script>
+    <script src="../../non-html/js/ribesg.js"></script>
+    <script src="../../non-html/js/effect.js"></script>
+    
+    <script>
+        $(document).foundation();
+        
+        document.querySelector('#Status h2').innerText   = stateNCoreStringFr;
+        document.querySelector('#Status h2').textContent = stateNCoreStringFr;
+        document.querySelector('#Status .progress .meter').style.width = stateNCoreVal;
+        
+        effect( '#title'    , 'fadeInLeft'  ,  500 );
+        effect( '.content'  , 'fadeInRight' , 1000 );
+        
+        effect( '#Status'   , 'fadeInLeft'  , 1500 );
+        effect( '#features' , 'fadeInLeft'  , 2000 );
+        effect( '#todo'     , 'fadeInRight' , 2000 );
+    </script>
+
+    </body>
+</html>

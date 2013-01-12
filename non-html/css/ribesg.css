@@ -1,0 +1,59 @@
+body {
+  /* Fix weird WebKit font bug when rotating text */
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+}
+
+.inline-icon-container {
+    display: inline !important;
+}
+
+.block-link   , .block-link:hover  ,
+.block-link a, .block-link:hover a {
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    color: black;
+}
+
+.block-link, .block-link img {
+    transition-duration: 0.2s;
+}
+
+.block-link.neg:hover, .block-link.neg:hover img{
+    -webkit-transform: rotateZ(-8deg);
+    -moz-transform: rotateZ(-8deg);
+    -o-transform: rotateZ(-8deg);
+    transform: rotateZ(-8deg);
+}
+
+.block-link.pos:hover, .block-link.pos:hover img {
+    -webkit-transform: rotateZ(8deg);
+    -moz-transform: rotateZ(8deg);
+    -o-transform: rotateZ(8deg);
+    transform: rotateZ(8deg);
+}
+
+nav img {
+    height: 3em;;
+}
+
+#id404 {
+    padding: 1.25%;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+.hidden-effect {
+    display: none !important;
+}
+
+.redpanel {
+    border-radius: 5px;
+    background: rgba(200,0,0,0.1);
+}
+
+.redpanel:hover {
+    background: rgba(255,0,0,0.33);
+}

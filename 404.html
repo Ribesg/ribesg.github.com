@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" ><!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Ribesg.fr - 404</title>
+        <link rel="stylesheet" href="/non-html/css/foundation.css" />
+        <link rel="stylesheet" href="/non-html/css/icons.css">
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/non-html/css/icons_ie7.css">
+        <![endif]-->
+        </style>
+        <link rel="stylesheet" href="/non-html/css/ribesg.css" />
+        <link rel="stylesheet" href="/non-html/css/animate.css" />
+        <link rel="icon" type="image/png" href="/non-html/img/favicon.png" />
+        <!--[if IE]>
+        <link rel="shortcut icon" type="image/x-icon" href="/non-html/img/favicon.ico" />
+        <![endif]-->
+        <script src="/non-html/js/vendor/custom.modernizr.js"></script>
+    </head>
+    <body>
+
+    <nav class="top-bar">
+        <ul class="title-area">
+            <!-- Title Area -->
+            <li class="name">
+                <h1>
+                    <a href="/">Rib.log</a>
+                </h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon">
+                <a href="#">
+                    <span>Menu</span>
+                </a>
+            </li>
+        </ul>
+
+        <section class="top-bar-section">
+            <!-- Left Nav Section -->
+            <ul class="left">
+                <li class="divider"></li>
+                <li class="hide-for-small active"> <a href="/">Main page</a> </li>
+                <li class="divider hide-for-small"></li>
+            </ul>
+
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li class="divider hide-for-small"></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </section>
+    </nav>
+    
+    <div id="content" class="row text-center">
+        <h2 class="hidden-effect"> 404. </h2>
+        <img class="hidden-effect" id="id404" src="/non-html/img/404.jpg" />
+        <h1 class="hidden-effect"> Peugeot 404. </h1>
+    </div>
+
+    <script>
+        document.write(
+            '<script src=' +
+            ('__proto__' in {} 
+                ? '/non-html/js/vendor/zepto' 
+                : '/non-html/js/vendor/jquery') +
+            '.js><\/script>');
+    </script>
+
+    <script src="/non-html/js/foundation.min.js"></script>
+    <script src="/non-html/js/effect.js"></script>
+
+    <script>
+        $(document).foundation();
+        effect( '#content h2' , 'fadeInUp' , 1500 );
+        effect( '#id404'      , 'fadeInUp' , 2500 );
+        effect( '#content h1' , 'fadeInUp' , 3500 );
+    </script>
+
+    </body>
+</html>

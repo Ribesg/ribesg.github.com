@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" ><!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Ribesg.fr - NCuboid</title>
+        <link rel="stylesheet" href="../non-html/css/foundation.css" />
+        <link rel="stylesheet" href="../non-html/css/icons.css">
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="../non-html/css/icons_ie7.css">
+        <![endif]-->
+        </style>
+        <link rel="stylesheet" href="../non-html/css/ribesg.css" />
+        <link rel="stylesheet" href="../non-html/css/animate.css" />
+        <link rel="icon" type="image/png" href="../non-html/img/favicon.png" />
+        <!--[if IE]>
+        <link rel="shortcut icon" type="image/x-icon" href="../non-html/img/favicon.ico" />
+        <![endif]-->
+        <script src="../non-html/js/vendor/custom.modernizr.js"></script>
+    </head>
+    <body>
+
+    <nav class="top-bar">
+        <ul class="title-area">
+            <!-- Title Area -->
+            <li class="name">
+                <h1>
+                    <a href="/">Rib.log</a>
+                </h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon">
+                <a href="#">
+                    <span>Menu</span>
+                </a>
+            </li>
+        </ul>
+
+        <section class="top-bar-section">
+            <!-- Left Nav Section -->
+            <ul class="left">
+                <li class="divider"></li>
+                <li class="hide-for-small active"> <a href="/">Main page</a> </li>
+                <li class="divider hide-for-small"></li>
+            </ul>
+
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li class="hide-for-small"> <a>Website still under construction</a> </li>
+                <li class="divider hide-for-small"></li>
+                <li class="hide-for-small">
+                    <a href="../fr/bukkit/NCore">
+                        <img src="../non-html/img/flags/fr.png" />
+                    </a>
+                </li>
+                <li class="divider hide-for-small"></li>
+                <li class="active"><a href="#">About</a></li>
+            </ul>
+        </section>
+    </nav>
+    
+    <div id="title" class="row hidden-effect">
+        <!-- Title -->
+        <div class="large-9 columns">
+            <h2 class="inline-icon-container"> <i class="hide-for-small foundicon-smiley"></i> NCuboid - Protects your things !</h2>
+            <h4 class="subheader"> Basically another region protection plugin. </h4>
+        </div>
+        <div class="large-3 columns">
+            <ul class="large-block-grid-4">
+                <li>
+                    <a class="block-link pos" href="http://dev.bukkit.org/bukkit-plugins/ncuboid/">
+                        <img alt="See the BukkitDev page" src="../non-html/img/bukkit.png" />
+                    </a>
+                </li>
+                <li>
+                    <a class="block-link neg" href="https://github.com/Ribesg/NPlugins/tree/master/NCuboid">
+                        <img alt="See source code on Github" src="../non-html/img/github.png" />
+                    </a>
+                </li>
+            </ul>
+            <ul class="large-block-grid-4">
+                <li>
+                    <a class="block-link neg" href="http://mcstats.org/plugin/NCuboid">
+                        <img alt="See stats on this plugin on MCStats" src="../non-html/img/mcstats.png" />
+                    </a>
+                </li>
+                <li>
+                    <a class="block-link pos" href="https://www.paypal.com/cgi-bin/webscr?hosted_button_id=RVS3BJHFPC78A&item_name=NCuboid+%28from+Ribesg.fr%29&cmd=_s-xclick">
+                        <img alt="Feel free to donate!" src="../non-html/img/donate.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <p class="large-12 columns content hidden-effect">
+            NCuboid is a region protection plugin that allows players to protect what they build. 
+            Any player can create a cuboid region and apply different flags to it. 
+            Some flags are quite standard, like <kbd>build</kbd>, <kbd>fire</kbd> or <kbd>use</kbd>; 
+            others are really different, like the <kbd>booster</kbd> flag, which applies a velocity 
+            to player moving in the cuboid. Admins can also manage World cuboids, which basically 
+            allow to apply flags on whole worlds.
+        </p>
+    </div>
+    <div class="row">
+        <div class="large-12 columns hidden-effect" id="Status">
+            <h2 class="inline-icon-container"> <i class="hide-for-small foundicon-settings"></i> <span>Status: loading...<span></h2>
+            <div class="progress success" style="height: 3em;">
+                <span class="meter" style="width: 0;"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="features" class="large-12 columns hidden-effect">
+            <h3> Features </h3>
+            <div class="text-center"> <img src="../non-html/img/wip.jpg" style="max-height:50%"/> </div>
+            <!--
+            <ul class="large-11 large-offset-1 columns">
+                <li> WIP </li>
+            </ul>
+            -->
+        </div>
+    </div>
+    <div class="row">
+        <div id="done" class="large-4 columns hidden-effect">
+            <h3> DONE-List </h3>
+            <ul class="small-11 small-offset-1 columns">
+                <li> Plugin structure </li>
+                <li> Cuboid representation & load/save </li>
+                <li> Events handling </li>
+                <li> Config handling </li>
+                <li>
+                    Commands:
+                    <ul>
+                        <li> <kbd>/cuboid reload &lt;configName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid create &lt;cuboidName&gt;</kbd> </li>
+                    </ul>
+                    Aliases:
+                    <ul>
+                        <li> cuboid: cubo, c </li>
+                        <li> reload: rld, r </li>
+                        <li> create: c </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="todo" class="large-8 columns hidden-effect">
+            <h3> TODO-List </h3>
+            <ul class="small-11 small-offset-1 columns">
+                <li>
+                    Investigate non-Cuboid regions (Cylinders).
+                    Will be done after some releases.
+                </li>
+                <li>
+                    Commands:
+                    <ul>
+                        <li> <kbd>/cuboid</kbd> (Gives informations on player's cuboids)
+                        <li> <kbd>/cuboid delete &lt;cuboidName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid info &lt;cuboidName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid help [pageNumber]</kbd> </li>
+                        <li> <kbd>/cuboid flag &lt;cuboidName&gt; &lt;flagName&gt; <value></kbd> </li>
+                        <li> <kbd>/cuboid welcomeMessage [message]</kbd> </li>
+                        <li> <kbd>/cuboid farewellMessage [message]</kbd> </li>
+                        <li> <kbd>/cuboid setJailPoint &lt;cuboidName&gt; &lt;jailName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid delJailPoint &lt;jailName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid rename &lt;cuboidName&gt; &lt;newName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid setOwner &lt;cuboidName&gt; &lt;newOwnerName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid addCoOwner &lt;cuboidName&gt; &lt;newCoOwnerName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid delCoOwner &lt;cuboidName&gt; &lt;coOwnerName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid redefine &lt;cuboidName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid allow &lt;cuboidName&gt; &lt;playerName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid deny &lt;cuboidName&gt; &lt;playerName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid allowCommand &lt;cuboidName&gt; &lt;commandName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid denyCommand &lt;cuboidName&gt; &lt;commandName&gt;</kbd> </li>
+                        <li> <kbd>/cuboid list &lt;playerName&gt;</kbd> </li>
+                        <em> Following commands may be change to a unique <kbd>/cuboid set &lt;cuboidName&gt; &lt;attributeName&gt; <value></kbd> </em>
+                        <li> <kbd>/cuboid setExternalPoint &lt;cuboidName&gt; [ worldName,x,y,z | worldName x y z ]</kbd> </li>
+                        <li> <kbd>/cuboid setInternalPoint &lt;cuboidName&gt; [ worldName,x,y,z | worldName x y z ]</kbd> </li>
+                        <li> <kbd>/cuboid setBoosterVector &lt;cuboidName&gt; &lt; x,y,z | x y z &gt;</kbd> </li>
+                        <li> <kbd>/cuboid setHealAmount &lt;cuboidName&gt; &lt;amount&gt;</kbd> Temporary usage, may change </li>
+                        <li> <kbd>/cuboid setHealTimer &lt;cuboidName&gt; &lt;timer&gt;</kbd> Temporary usage, may change </li>
+                        <li> <kbd>/cuboid setHealMin &lt;cuboidName&gt; &lt;min&gt;</kbd> Temporary usage, may change </li>
+                        <li> <kbd>/cuboid setHealMax &lt;cuboidName&gt; &lt;max&gt;</kbd> Temporary usage, may change </li>
+                        <li> <kbd>/cuboid setFeedAmount &lt;cuboidName&gt; &lt;amount&gt;</kbd> Temporary usage, may change </li>
+                        <li> <kbd>/cuboid setFeedTimer &lt;cuboidName&gt; &lt;timer&gt;</kbd> Temporary usage, may change </li>
+                        <li> <kbd>/cuboid setFeedMin &lt;cuboidName&gt; &lt;min&gt;</kbd> Temporary usage, may change </li>
+                        <li> <kbd>/cuboid setFeedMax &lt;cuboidName&gt; &lt;max&gt;</kbd> Temporary usage, may change </li>
+                        <li> + Many others not yet listed </li>
+                    </ul>
+                    Aliases:
+                    <ul>
+                        <li> delete: d, remove, rm </li>
+                        <li> info: i </li>
+                        <li> help: h, ? </li>
+                        <li> flag values:
+                            <ul>
+                                <li> true, enable, enabled, on, 1 </li>
+                                <li> false, disable, disabled, off, 0 </li>
+                            </ul>
+                        </li>
+                        <li> welcomemessage: wm </li>
+                        <li> farewellmessage: fm </li>
+                    </ul>
+                </li>
+                <li> A lot of tests </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.write(
+            '<script src=' +
+            ('__proto__' in {} 
+                ? '../non-html/js/vendor/zepto' 
+                : '../non-html/js/vendor/jquery') +
+            '.js><\/script>');
+    </script>
+
+    <script src="../non-html/js/foundation.min.js"></script>
+    <script src="../non-html/js/ribesg.js"></script>
+    <script src="../non-html/js/effect.js"></script>
+    <script>
+        $(document).foundation();
+        
+        document.querySelector('#Status h2').innerText   = stateNCuboidString;
+        document.querySelector('#Status h2').textContent = stateNCuboidString;
+        document.querySelector('#Status .progress .meter').style.width = stateNCuboidVal;
+        
+        effect( '#title'    , 'fadeInLeft'  ,  500 );
+        effect( '.content'  , 'fadeInRight' , 1000 );
+        
+        effect( '#Status'   , 'fadeInLeft'  , 1500 );
+        effect( '#features' , 'fadeInRight' , 2000 );
+        effect( '#done'     , 'fadeInLeft'  , 2500 );
+        effect( '#todo'     , 'fadeInRight' , 2500 );
+    </script>
+
+    </body>
+</html>
