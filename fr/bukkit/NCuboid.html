@@ -211,8 +211,12 @@
             </ul>
         </div>
     </div>
-
-    <div id="disqus_thread"></div>
+    
+    <div class="row">
+        <div class="large-12 columns hidden-effect" id="Disqus">
+            <div id="disqus_thread"></div>
+        </div>
+    </div>
 
     <script>
         document.write(
@@ -240,6 +244,8 @@
         effect( '#features' , 'fadeInRight' , 2000 );
         effect( '#done'     , 'fadeInLeft'  , 2500 );
         effect( '#todo'     , 'fadeInRight' , 2500 );
+        
+        effect( '#Disqus'   , 'fadeInUp'    , 3000 );
     </script>
     
     <!-- DISQUS comments -->
