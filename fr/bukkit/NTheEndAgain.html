@@ -19,7 +19,7 @@
         <!--[if IE]>
         <link rel="shortcut icon" type="image/x-icon" href="../../non-html/img/favicon.ico" />
         <![endif]-->
-        <script src="../non-html/js/vendor/custom.modernizr.js"></script>
+        <script src="../../non-html/js/vendor/custom.modernizr.js"></script>
     </head>
     <body>
 
@@ -52,8 +52,8 @@
                 <li class="hide-for-small"> <a>Site toujours en construction</a> </li>
                 <li class="divider hide-for-small"></li>
                 <li class="hide-for-small">
-                    <a href="../fr/bukkit/NCore">
-                        <img src="../non-html/img/flags/fr.png" />
+                    <a href="../../bukkit/NCore">
+                        <img src="../../non-html/img/flags/gb.png" />
                     </a>
                 </li>
                 <li class="divider hide-for-small"></li>
@@ -233,17 +233,18 @@
         
         document.querySelector('#Status h2').innerText   = stateNTheEndAgainString;
         document.querySelector('#Status h2').textContent = stateNTheEndAgainString;
-        document.querySelector('#Status .progress .meter').style.width = stateNThEndAgainVal;
+        document.querySelector('#Status .progress .meter').style.width = stateNTheEndAgainVal;
         
-        effect( '#title'    , 'fadeInLeft'  ,  500 );
-        effect( '.content'  , 'fadeInRight' , 1000 );
+        effect( '#title'       , 'fadeInLeft'  ,  500 );
+        effect( '.content'     , 'fadeInRight' , 1000 );
         
-        effect( '#Status'   , 'fadeInLeft'  , 1500 );
-        effect( '#features' , 'fadeInRight' , 2000 );
-        effect( '#done'     , 'fadeInLeft'  , 2500 );
-        effect( '#todo'     , 'fadeInRight' , 2500 );
+        effect( '#Status'      , 'fadeInLeft'  , 1500 );
+        effect( '#features'    , 'fadeInRight' , 2000 );
+        effect( '#commands'    , 'fadeInLeft'  , 2500 );
+        effect( '#permissions' , 'fadeInRight' , 3000 );
+        effect( '#config'      , 'fadeInLeft'  , 3500 );
         
-        effect( '#Disqus'   , 'fadeInUp'    , 3000 );
+        effect( '#Disqus'      , 'fadeInUp'    , 4000 );
     </script>
     
     <!-- DISQUS comments -->
