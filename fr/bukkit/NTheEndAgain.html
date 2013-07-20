@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" ><!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Ribesg.fr - NTheEndAgain</title>
+        <link rel="stylesheet" href="../../non-html/css/foundation.css" />
+        <link rel="stylesheet" href="../../non-html/css/icons.css">
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="../../non-html/css/icons_ie7.css">
+        <![endif]-->
+        </style>
+        <link rel="stylesheet" href="../../non-html/css/ribesg.css" />
+        <link rel="stylesheet" href="../../non-html/css/animate.css" />
+        <link rel="icon" type="image/png" href="../../non-html/img/favicon.png" />
+        <!--[if IE]>
+        <link rel="shortcut icon" type="image/x-icon" href="../../non-html/img/favicon.ico" />
+        <![endif]-->
+        <script src="../non-html/js/vendor/custom.modernizr.js"></script>
+    </head>
+    <body>
+
+    <nav class="top-bar">
+        <ul class="title-area">
+            <!-- Title Area -->
+            <li class="name">
+                <h1>
+                    <a href="/">Rib.log</a>
+                </h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon">
+                <a href="#">
+                    <span>Menu</span>
+                </a>
+            </li>
+        </ul>
+
+        <section class="top-bar-section">
+            <!-- Left Nav Section -->
+            <ul class="left">
+                <li class="divider"></li>
+                <li class="hide-for-small active"> <a href="/fr/">Page Principale</a> </li>
+                <li class="divider hide-for-small"></li>
+            </ul>
+
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li class="hide-for-small"> <a>Site toujours en construction</a> </li>
+                <li class="divider hide-for-small"></li>
+                <li class="hide-for-small">
+                    <a href="../fr/bukkit/NCore">
+                        <img src="../non-html/img/flags/fr.png" />
+                    </a>
+                </li>
+                <li class="divider hide-for-small"></li>
+                <li class="active"><a href="#">A propos</a></li>
+            </ul>
+        </section>
+    </nav>
+    
+    <div id="title" class="row hidden-effect">
+        <!-- Title -->
+        <div class="large-9 columns">
+            <h2 class="inline-icon-container"> <i class="hide-for-small foundicon-smiley"></i> NTheEndAgain - Plein de Dragons !</h2>
+            <h4 class="subheader"> Respawn de Dragons, régénération du End, et plein de trucs super-configurables </h4>
+        </div>
+        <div class="large-3 columns">
+            <ul class="large-block-grid-4">
+                <li>
+                    <a class="block-link pos" href="http://dev.bukkit.org/bukkit-plugins/ntheendagain/">
+                        <img alt="Voir la page BukkitDev" src="../../non-html/img/bukkit.png" />
+                    </a>
+                </li>
+                <li>
+                    <a class="block-link neg" href="https://github.com/Ribesg/NPlugins/tree/master/NTheEndAgain">
+                        <img alt="Voir le code source sur Github" src="../../non-html/img/github.png" />
+                    </a>
+                </li>
+            </ul>
+            <ul class="large-block-grid-4">
+                <li>
+                    <a class="block-link neg" href="http://mcstats.org/plugin/NTheEndAgain">
+                        <img alt="Voir des statistiques sur ce plugin sur MCStats" src="../../non-html/img/mcstats.png" />
+                    </a>
+                </li>
+                <li>
+                    <a class="block-link pos" href="https://www.paypal.com/cgi-bin/webscr?hosted_button_id=RVS3BJHFPC78A&item_name=NCuboid+%28from+Ribesg.fr%29&cmd=_s-xclick">
+                        <img alt="Pensez aux dons !" src="../../non-html/img/donate.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <p class="large-12 columns content hidden-effect">
+            DESCRIPTION
+        </p>
+    </div>
+    <div class="row">
+        <div class="large-12 columns hidden-effect" id="Status">
+            <h2 class="inline-icon-container"> <i class="hide-for-small foundicon-settings"></i> <span>Status: loading...<span></h2>
+            <div class="progress success" style="height: 3em;">
+                <span class="meter" style="width: 0;"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="features" class="large-12 columns hidden-effect">
+            <h3> Fonctionnalités </h3>
+            <ul class="large-11 large-offset-1 columns">
+                <li>
+                    Respawn du(des) EnderDragon(s)
+                    <ul>
+                        <li> Automatique au manuelle </li>
+                        <li> Nombre configurable </li>
+                        <li> Hautement configurable </li>
+                        <li> Liaison optionnelle avec la régénération </li>
+                    </ul>
+                </li>
+                <li>
+                    Régénération du End
+                    <ul>
+                        <li> Automatique au manuelle </li>
+                        <li> Instantanée (lag), lente (sans lag) ou réduite aux Crystaux du End </li>
+                        <li> Protection sélective de chunks </li>
+                        <li> Hautement configurable </li>
+                        <li> Liaison optionnelle avec le respawn </li>
+                    </ul>
+                </li>
+                <li>
+                    Customisation des Dragons
+                    <ul>
+                        <li> Santé </li>
+                        <li> Dommage </li>
+                    </ul>
+                </li>
+                <li>
+                    Gestion de l'XP
+                    <ul>
+                        <li> Quantité configurable </li>
+                        <li> Répartition automatique en fonction des dégâts infligés, à la place du drop d'Orbs. Optionnel </li>
+                    </ul>
+                </li>
+                <li>
+                    Gestion de l'Oeuf de Dragon et du Portail
+                    <ul>
+                        <li> Don de l'oeuf pseudo-aléatoirement, le meilleur combattant a le plus de chance de l'obtenir. Optionnel </li>
+                        <li> Apparition du portail configurable </li>
+                    </ul>
+                </li>
+                <li>
+                    Gestion de l'Oeuf de Dragon et du Portail
+                    <ul>
+                        <li> Don de l'oeuf pseudo-aléatoirement, le meilleur combattant a le plus de chance de l'obtenir. Optionnel </li>
+                        <li> Apparition du portail configurable </li>
+                    </ul>
+                </li>
+                <li> Configuration de la vitesse de régénération des Crystaux de l'End </li>
+                <li> Simulation de l'effet de "repoussement" du joueur par le Dragon, annulé par Bukkit </li>
+                <li> Filtrage du message de spam "Player moved too quickly!" </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div id="commands" class="large-12 columns hidden-effect">
+            <h3> Commandes </h3>
+            <ul class="large-11 large-offset-1 columns">
+                <li> <kbd>/nend [help|h]</kbd> - Commande de base. Liste les sous-commandes disponibles. Alias : end, nTheEndAgain </li>
+                <li> <kbd>/nend regen [worldName] ["hard"]</kbd> - Régénération du monde courant ou <kbd>worldName</kbd> si présent. Force une régénération instantanée si l'argument <kbd>hard</kbd> est présent. </li>
+                <li> <kbd>/nend &lt;respawn|respawnED|respawnEnderDragon&gt; [worldName]</kbd> - Respawn du(des) Dragon(s) dans le monde courant ou <kbd>worldName</kbd> si présent. </li>
+                <li> <kbd>/nend &lt;nb|nbED|nbEnderDragon&gt; [worldName]</kbd> - Donne le nombre de Dragons dans le monde courant ou <kbd>worldName</kbd> si présent. </li>
+                <li> <kbd>/nend chunk &lt;i|info&gt;</kbd> - Donne des infos sur le chunk où se trouve le joueur </li>
+                <li> <kbd>/nend chunk &lt;p|protect&gt;</kbd> - Protège le chunk où se trouve le joueur contre la régénération </li>
+                <li> <kbd>/nend chunk &lt;up|unprotect&gt;</kbd> - Retire la protection sur le chunk où se trouve le joueur </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div id="permissions" class="large-12 columns hidden-effect">
+            <h3> Permissions </h3>
+            <h4> Simples - Recommandées </h4>
+            <ul class="large-11 large-offset-1 columns">
+                <li> <kbd>ntheendagain.admin</kbd> - Donne accès à toutes les commandes. </li>
+                <li> <kbd>ntheendagain.user</kbd> - Donne accès aux commandes <kbd>/end help</kbd>, <kbd>/end nb</kbd> et <kbd>/end chunk info</kbd> </li>
+            </ul>
+            <h4> Détaillées - Pour plus de précision </h4>
+            <ul class="large-11 large-offset-1 columns">
+                <li> <kbd>ntheendagain.cmd.help</kbd> - Donne accès à la commande <kbd>/end help</kbd> </li>
+                <li> <kbd>ntheendagain.cmd.reload</kbd> - Donne accès à la commande <kbd>/end reload</kbd> </li>
+                <li> <kbd>ntheendagain.cmd.regen</kbd> - Donne accès à la commande <kbd>/end regen</kbd> </li>
+                <li> <kbd>ntheendagain.cmd.respawn</kbd> - Donne accès à la commande <kbd>/end respawn</kbd> </li>
+                <li> <kbd>ntheendagain.cmd.nb</kbd> - Donne accès à la commande <kbd>/end nb</kbd> </li>
+                <li> <kbd>ntheendagain.cmd.chunkinfo</kbd> - Donne accès à la commande <kbd>/end chunk info</kbd> </li>
+                <li> <kbd>ntheendagain.cmd.chunkprotect</kbd> - Donne accès à la commande <kbd>/end chunk protect</kbd> </li>
+                <li> <kbd>ntheendagain.cmd.chunkunprotect</kbd> - Donne accès à la commande <kbd>/end chunk unprotect</kbd> </li>
+            </ul>
+            <p> Note : Le status OP permet d'utiliser toutes les commandes. </p>
+        </div>
+    </div>
+    <div class="row">
+        <div id="config" class="large-12 columns hidden-effect">
+            <h3> Exemple de configuration </h3>
+            <kbd class="large-11 large-offset-1 columns">
+            #####################################################################<br/>##               Config file for NTheEndAgain plugin               ##<br/>## If you don't understand something, please ask on dev.bukkit.org ##<br/>##                                                          Ribesg ##<br/>#####################################################################<br/><br/># This config file is about the world &quot;world_the_end&quot;<br/><br/>###########################<br/>## GENERAL CONFIGURATION ##<br/>###########################<br/><br/># Do we hide the 'Player Moved Too Quickly!' spam? Default: 0<br/># /!\ This feature is not compatible with any other plugin using Bukkit's Logger filters<br/>#<br/>#       0: Disabled.<br/>#       1: Enabled.<br/>#<br/># Note: to completely disable the filter and allow compatibility with other plugins using it,<br/>#       please be sure to set it to 0 in EVERY End World config file.<br/>#<br/>filterMovedTooQuicklySpam: 0<br/><br/>###############################<br/>## ENDERDRAGON CONFIGURATION ##<br/>###############################<br/><br/># The health value EnderDragons will spawn with. Default: 200<br/>edHealth: 200<br/><br/># Scale damages done by EnderDragon. Default: 1.0<br/>edDamageMultiplier: 1.0<br/><br/># Do we 'simulate' the EnderDragon-Pushes-Player behaviour? Default: 1<br/># This feature apply a kind-of random velocity to a Player after it has been damaged by an EnderDragon<br/>#<br/>#       0: Disabled.<br/>#       1: Enabled.<br/>#<br/>edPushesPlayers: 1<br/><br/># The way the DragonEgg will spawn. Default: 0<br/>#<br/>#       0: Disabled. The egg will spawn normally if portalHandling is set to 0 or 1.<br/>#       1: Enabled. The egg will be semi-randomly given to one of the best fighters.<br/>#<br/>edEggHandling: 0<br/><br/># The way the reward XP will be given to player. Default: 0<br/>#<br/>#       0: Disabled. XP orbs will spawn normally.<br/>#       1: Enabled. XP will be splitted between fighters, more XP for better fighters.<br/>#<br/>edExpHandling: 0<br/><br/># The value of the XP drop. Default: 12000<br/>edExpReward: 12000<br/><br/># The way portal spawn will be handled. Default: 0<br/>#<br/>#       0: Disabled. Portal will spawn normally.<br/>#       1: Egg. Portal will be removed but not the DragonEgg<br/>#       2: Enabled. Portal will not spawn. No more cut obsidian towers. /!\ No Egg if dragonEggHandling=0.<br/>#<br/>edPortalSpawn: 0<br/><br/>#################################<br/>## ENDERCRYSTALS CONFIGURATION ##<br/>#################################<br/><br/># Change EnderCrystals behaviour relative to the EnderDragon. Default: 1.0<br/># One important thing to understand is that Health is integer (for now).<br/>#<br/>#       &lt; 1.0: Acts as a &quot;chance that the Dragon will regain 1 HP&quot; each tick<br/>#       = 1.0: Vanilla. EnderDragon gain 1 HP per tick.<br/>#       &gt; 1.0: EnderDragon gain x HP per tick, so please set it to an integer value like 2 or more.<br/>#<br/>ecHealthRegainRate: 1.0<br/><br/>################################<br/>## REGENERATION CONFIGURATION ##<br/>################################<br/><br/># Select the regeneration type. Default: 0<br/>#<br/>#       0: Disabled. No hot regeneration.<br/>#       1: Before EnderDragon respawn (only if no EnderDragon alive)<br/>#       2: Periodic - From load time. Regen every &lt;regenTimer&gt; seconds after boot/load.<br/>#       3: Periodic - Persistent. Regen every &lt;regenTimer&gt; seconds, persistent through reboots/reloads<br/>#<br/>regenType: 0<br/><br/># Select your definition of &quot;regen&quot;. Default: 0<br/>#<br/>#       0: Hard Regen. Regen every chunks at once. Laggy. Not recommended.<br/>#       1: Soft Regen. Regen chunks when they are loaded. A lot less laggy.<br/>#       2: Crystals only. Does not modify any block, only respawn the EnderCrystals.<br/>#<br/># Note: Regeneration does not regenerate Protected chunks.<br/>#<br/>regenMethod: 0<br/><br/># The time between each regen. Ignored if regenType is not Periodic (2 or 3). Default: 86400<br/>#<br/># Here are some example values:<br/>#   Value   --   Description<br/>#       1800: 30 minutes<br/>#       3600: 1 hour<br/>#       7200: 2 hours<br/>#      10800: 3 hours<br/>#      14400: 4 hours<br/>#      21600: 6 hours<br/>#      28800: 8 hours<br/>#      43200: 12 hours<br/>#      86400: 24 hours - 1 day<br/>#     172800: 48 hours - 2 days<br/>#     604800: 7 days<br/>#<br/># You can use *any* strictly positive value you want, just be sure to convert it to seconds.<br/>#<br/># Note: You should NOT use low value. Some hours of delay are recommended.<br/>#<br/>regenTimer: 86400<br/><br/># What do we do to players in the End when we want to regen the world? Default: 0<br/>#<br/>#       0: Kick them. This way they can rejoin immediatly in the End at the same place.<br/>#          WARNING: Mass rejoin after mass kick in the End could cause lag if regenMethod=1<br/>#<br/>#       1: Teleport them to the spawn point of the Main (= first) world.<br/>#<br/>regenAction: 0<br/><br/># Activate hard regeneration on server stop. This will only slow down server stop.<br/># This is nice to clean the End occasionnaly when using Soft or Crystal regen.<br/>#<br/>#       0: Disabled.<br/>#       1: Enabled.<br/>#<br/>hardRegenOnStop: 0<br/><br/>###########################<br/>## RESPAWN CONFIGURATION ##<br/>###########################<br/><br/># This is the amount of EnderDragons you want to be spawned. Default: 1<br/>respawnNumber: 1<br/><br/># Select when you want to respawn Dragons automagically. Default: 0<br/>#<br/>#       0: Disabled. No automatic respawn.<br/>#       1: X seconds after each Dragon's death. Not really good with regenType=1.<br/>#       2: X seconds after the last Dragon alive's death.<br/>#       3: On server start.<br/>#       4: Periodic - From load time. Respawn every X seconds after boot/load.<br/>#       5: Periodic - Persistent. Respawn every X seconds, persistent through reboots/reloads<br/>#<br/>respawnType: 0<br/><br/># The X value in the previous comments. Defaults: 7200 &lt; 14400<br/># A value will be randomly chosen for each iteration. The chosen value vill be between min and max<br/>#<br/># Here are some example values (again!):<br/>#   Value   --   Description<br/>#       1800: 30 minutes<br/>#       3600: 1 hour<br/>#       7200: 2 hours<br/>#      10800: 3 hours<br/>#      14400: 4 hours<br/>#      21600: 6 hours<br/>#      28800: 8 hours<br/>#      43200: 12 hours<br/>#      86400: 24 hours - 1 day<br/>#     172800: 48 hours - 2 days<br/>#     604800: 7 days<br/>#<br/># You can use *any* strictly positive value you want, just be sure to convert it to seconds.<br/>#<br/># Note: You CAN use low value if regenType is not set to 1.<br/>#       But maybe you should consider using respawnType=1 or respawnType=2 instead of a low periodic.<br/>#<br/>respawnTimerMin: 7200<br/>respawnTimerMax: 14400<br/><br/>#################################<br/>## DATA - PLEASE DO NOT TOUCH! ##<br/>#################################<br/><br/># Used to allow Regen task timer persistence. /!\ PLEASE DO NOT TOUCH THIS !<br/>nextRegenTaskTime: 0<br/><br/># Used to allow Respawn task timer persistence. /!\ PLEASE DO NOT TOUCH THIS !<br/>nextRespawnTaskTime: 0<br/>
+            </kbd>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="large-12 columns hidden-effect" id="Disqus">
+            <div id="disqus_thread"></div>
+        </div>
+    </div>
+
+    <script>
+        document.write(
+            '<script src=' +
+            ('__proto__' in {} 
+                ? '../../non-html/js/vendor/zepto' 
+                : '../../non-html/js/vendor/jquery') +
+            '.js><\/script>');
+    </script>
+
+    <script src="../../non-html/js/foundation.min.js"></script>
+    <script src="../../non-html/js/ribesg.js"></script>
+    <script src="../../non-html/js/effect.js"></script>
+    <script>
+        $(document).foundation();
+        
+        document.querySelector('#Status h2').innerText   = stateNTheEndAgainString;
+        document.querySelector('#Status h2').textContent = stateNTheEndAgainString;
+        document.querySelector('#Status .progress .meter').style.width = stateNThEndAgainVal;
+        
+        effect( '#title'    , 'fadeInLeft'  ,  500 );
+        effect( '.content'  , 'fadeInRight' , 1000 );
+        
+        effect( '#Status'   , 'fadeInLeft'  , 1500 );
+        effect( '#features' , 'fadeInRight' , 2000 );
+        effect( '#done'     , 'fadeInLeft'  , 2500 );
+        effect( '#todo'     , 'fadeInRight' , 2500 );
+        
+        effect( '#Disqus'   , 'fadeInUp'    , 3000 );
+    </script>
+    
+    <!-- DISQUS comments -->
+    <script type="text/javascript">
+        var disqus_shortname = 'ribesg';
+        var disqus_identifier = 'ntheendagain_fr';
+        var disqus_title = 'Intéraction humaine !';
+        var disqus_url = 'http://www.ribesg.fr/fr/bukkit/NTheEndAgain';
+        
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
+    </body>
+</html>
