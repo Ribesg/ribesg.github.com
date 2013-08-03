@@ -1,12 +1,12 @@
 // Initial data
 var stateNCore          = 99;
 var stateNCuboid        = 75;
-var stateNEnchantingEgg = 60;
+var stateNEnchantingEgg = 65;
 var stateNGeneral       =  2;
 var stateNPlayer        = 40;
 var stateNTalk          = 70;
 var stateNTheEndAgain   = 99;
-var stateNWorld         = 65;
+var stateNWorld         = 85;
 
 // Global state
 var stateGlobal         = 0;
