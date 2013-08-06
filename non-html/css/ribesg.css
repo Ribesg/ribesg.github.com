@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll;
+}
+
 body {
   /* Fix weird WebKit font bug when rotating text */
   -webkit-font-smoothing: antialiased;
@@ -62,8 +66,4 @@ nav img {
 .row {
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-.bigwhitediv {
-    height: 50em;
 }
